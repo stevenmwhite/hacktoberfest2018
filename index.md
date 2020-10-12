@@ -7,11 +7,11 @@ layout: landing
 {% assign participantTwenty = site.participants | where: 'hf2020', 'participated' %}
 {% for participant in participantTwenty %}
 <li>
-    <h2>
+    <h3>
         <a href="{{ site.baseurl}}/{{ participant.url }}">
             {{ participant.name }}
         </a>
-    </h2>
+    </h3>
     <a href="{{ site.baseurl}}/{{ participant.url }}">
         <img src="https://github.com/{{ participant.github_username }}.png">
     </a>
@@ -24,11 +24,11 @@ layout: landing
 {% assign participantEighteen = site.participants | where: 'hf2018', 'participated' %}
 {% for participant in participantEighteen %}
 <li>
-    <h2>
+    <h3>
         <a href="{{ site.baseurl}}/{{ participant.url }}">
             {{ participant.name }}
         </a>
-    </h2>
+    </h3>
     <a href="{{ site.baseurl}}/{{ participant.url }}">
         <img src="https://github.com/{{ participant.github_username }}.png">
     </a>
