@@ -76,21 +76,6 @@
     </header>
     <main id="read_more">
         {{ content }}
-        <ul class="participants">
-            {% for participant in site.participants %}
-            <li>
-                <h2>
-                    <a href="{{ site.baseurl}}/{{ participant.url }}">
-                        {{ participant.name }}
-                    </a>
-                </h2>
-                <a href="{{ site.baseurl}}/{{ participant.url }}">
-                    <img src="https://github.com/{{ participant.github_username }}.png">
-                </a>
-            </li>
-            <br><br>
-            {% endfor %}
-        </ul>
     </main>
     <footer>
         <p>
